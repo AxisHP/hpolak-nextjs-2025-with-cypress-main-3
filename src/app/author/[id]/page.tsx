@@ -29,7 +29,7 @@ export default function AuthorDetailPage({ params }: { params: Promise<{ id: str
                     Albums:
                     <ul>
                         {albums?.map((album) => (
-                            <li key={album.id}>
+                            <li key={album.id} data-cy="album-card">
                                 <Link href={`/album/${album.id}`}>{album.name}</Link>
                             </li>
                         ))}
